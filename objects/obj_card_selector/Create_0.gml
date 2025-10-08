@@ -1,5 +1,5 @@
 pick = function(card_id) {
-    if (room == rm_game_start) {
+    if (room == rm_game_start && obj_hand.size() < 10) {
         self.find_deck(card_id).remove(card_id);
         obj_hand.add(card_id);
     }

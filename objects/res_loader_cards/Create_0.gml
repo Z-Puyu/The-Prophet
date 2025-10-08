@@ -13,13 +13,15 @@ read_row = function(r) {
     var card_heal_amount = real(self.read_cell(r, 5));
     var card_mark_id = self.read_cell(r, 6);
     var card_mark_multiplicity = real(self.read_cell(r, 7));
-    var is_obtainable = bool(self.read_cell(r, 8));
+    var card_mark_id_to_remove = self.read_cell(r, 8);
+    var card_mark_remove_count = real(self.read_cell(r, 9));
+    var is_obtainable = bool(self.read_cell(r, 10));
     
     var sprite_name = $"spr_{card_id}";
     var sprite = asset_get_index(sprite_name);
     var card_data = new CardData(
         card_id, card_type, card_name, sprite, card_rarity,
-        card_mark_id, card_mark_multiplicity,
+        card_mark_id, card_mark_multiplicity, card_mark_id_to_remove, card_mark_remove_count,
         card_damage, card_heal_amount
     );
     

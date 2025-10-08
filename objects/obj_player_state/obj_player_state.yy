@@ -7,7 +7,7 @@
   "managed":true,
   "name":"obj_player_state",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_battle_character","path":"objects/obj_battle_character/obj_battle_character.yy",},"propertyId":{"name":"max_health","path":"objects/obj_battle_character/obj_battle_character.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"100",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_battle_character","path":"objects/obj_battle_character/obj_battle_character.yy",},"propertyId":{"name":"max_health","path":"objects/obj_battle_character/obj_battle_character.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_battle_character","path":"objects/obj_battle_character/obj_battle_character.yy",},"propertyId":{"name":"name","path":"objects/obj_battle_character/obj_battle_character.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Player",},
   ],
   "parent":{

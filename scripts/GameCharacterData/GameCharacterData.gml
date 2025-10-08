@@ -38,6 +38,11 @@ function GameCharacterData(curr_hp, total_hp) constructor {
     count_mark = function(mark_id) {
         return ds_map_exists(self.marks, mark_id) ? self.marks[? mark_id] : 0;
     }
+    
+    clear_marks_and_statuses = function() {
+        ds_map_clear(self.marks);
+        ds_map_clear(self.status_effects);
+    }
 }
 
 function PlayerData(curr_hp, total_hp, curr_vision, total_vision) : GameCharacterData(curr_hp, total_hp) constructor {

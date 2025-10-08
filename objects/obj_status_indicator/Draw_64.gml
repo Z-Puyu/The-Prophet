@@ -12,7 +12,9 @@ while (key != undefined) {
     key = ds_map_find_next(obj_player_state.data.marks, key);
 }
 
+draw_set_halign(fa_center);
 draw_text_color(    
     960, 850, text,
     c_black, c_black, c_black, c_black, 1
 );
+draw_set_halign(fa_left);

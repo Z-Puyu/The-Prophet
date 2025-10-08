@@ -5,6 +5,8 @@ __private = {
     card_names_to_data: ds_map_create()
 };
 
+size = 0;
+
 /// @desc Function Description
 /// @param {id.instance} card_id Description
 add = function(card_id) {
@@ -23,6 +25,8 @@ add = function(card_id) {
     } else {
         self.__private.card_names_to_count[? card_data.name] += 1;
     }
+    
+    size += 1;
 }
 
 /// @desc Function Description
@@ -41,6 +45,8 @@ remove = function(card_id) {
             array_delete(self.__private.card_rarities, idx, 1);
         }
     }
+    
+    size -= 1;
 }
 
 /// @desc Denumerate the deck in ascending order of card rarity, and use alphabetical order of card names to break the tie
@@ -83,4 +89,5 @@ clear = function() {
     ds_map_clear(self.__private.card_names_to_count);
     ds_map_clear(self.__private.card_names_to_data);
     ds_map_clear(self.__private.card_rarity_to_name);
+    size = 0;
 }

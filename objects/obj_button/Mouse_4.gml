@@ -3,3 +3,4 @@ if (self.is_disabled) {
 }
 
 self.on_click();
+window_set_cursor(cr_default);

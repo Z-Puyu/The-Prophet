@@ -9,7 +9,10 @@ if (self.hovered) {
 self.depth = self.current_depth;
 draw_self();
 if (self.card_data != undefined && self.should_reveal) {
-    draw_sprite(self.card_data.sprite, self.image_index, self.x, self.y);
+    if (self.reveal >= 100) {
+        draw_sprite(self.card_data.sprite, self.image_index, self.x, self.y);
+    }
+    
     var x_padding = 25 * self.image_xscale;
     var y_padding = 25 * self.image_xscale;
     var text_x = self.x - self.sprite_width / 2 + x_padding;
